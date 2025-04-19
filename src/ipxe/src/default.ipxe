@@ -1,3 +1,0 @@
-#!ipxe
-dhcp
-chain http://${next-server}:8888?getmebootargs=${ip} || shell
