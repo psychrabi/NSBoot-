@@ -1,15 +1,21 @@
-# This is the network config written by 'subiquity'
- network:
-    ethernets:
-        eno1:
-            addresses:
-            - 192.168.0.2/24
-            dhcp4: false
-            gateway4: 192.168.0.210
-            nameservers:
-                addresses:
-                - 8.8.4.4
-                - 8.8.8.8
-                search:
-                - workgroup
-    version: 2
+network:
+  version: 2
+  ethernets:
+    enp2s0:
+      renderer: NetworkManager
+      match: {}
+      addresses:
+      - "192.168.1.220/24"
+      nameservers:
+        addresses:
+        - 192.168.1.254
+      networkmanager:
+        uuid: "7ea6f90b-3495-3533-948a-ef0035687c34"
+        name: "netplan-enp2s0"
+        passthrough:
+          connection.timestamp: "1744995674"
+          ipv4.address1: "192.168.1.220/24,192.168.1.254"
+          ipv4.method: "manual"
+          ipv6.method: "disabled"
+          ipv6.ip6-privacy: "-1"
+          proxy._: ""
