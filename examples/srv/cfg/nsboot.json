@@ -6,7 +6,7 @@
         "lockfile": "\/var\/lock\/nsboot_lock_",
         "image_prefix": "_child_",
         "imgdatadir": "\/images\/games",
-        "ipv4": "192.168.0.2",
+        "ipv4": "192.168.1.220",
         "distdir": "nsboot",
         "shell_port": 4200,
         "nbd_nbds": 20,
@@ -22,7 +22,7 @@
         "tftp": "tftp",
         "workdir": "\/srv",
         "debug": 1,
-        "gateway": "192.168.0.210",
+        "gateway": "192.168.1.2254",
         "nbd_max_part": 63,
         "config": "nsboot.json"
     },
@@ -36,10 +36,10 @@
                 {
                     "mask": "255.255.255.0",
                     "ranges": [
-                        "192.168.0.10 192.168.0.149",
-                        "192.168.0.180 192.168.0.200"
+                        "192.168.1.10 192.168.1.149",
+                        "192.168.1.180 192.168.1.200"
                     ],
-                    "sub": "192.168.0.0"
+                    "sub": "192.168.1.0"
                 }
             ],
             "global": {
@@ -47,14 +47,14 @@
                 "default-lease-time": 600,
                 "max-lease-time": 7200,
                 "ddns-update-style": "none",
-                "next-server": "192.168.0.2"
+                "next-server": "192.168.1.220"
             },
             "opt": {
                 "subnet-mask": "255.255.255.0",
                 "domain-name-servers": "8.8.8.8",
-                "broadcast-address": "192.168.0.255",
+                "broadcast-address": "192.168.1.255",
                 "domain-name": "nsboot.local",
-                "routers": "192.168.0.210"
+                "routers": "192.168.1.254"
             }
         }
     },
@@ -125,11 +125,11 @@
                 }
             ],
             "opt": [],
-            "ipv4": "192.168.0.1",
+            "ipv4": "192.168.1.1",
             "mac": "b4:2e:99:2c:e6:08",
             "group": "DEFAULT",
             "domainsearch": "nsboot.local",
-            "gateway": "192.168.0.210",
+            "gateway": "192.168.1.254",
             "name": "PC001",
             "dns": "8.8.8.8"
         },
@@ -172,8 +172,8 @@
             "domainsearch": "nsboot.local",
             "mac": "a8:a1:59:2a:2c:e6",
             "opt": [],
-            "ipv4": "192.168.0.2",
-            "gateway": "192.168.0.210",
+            "ipv4": "192.168.1.220",
+            "gateway": "192.168.1.254",
             "name": "PC002",
             "tid": "2"
         },
@@ -210,11 +210,11 @@
             "fileboot": "ipxe",
             "dns": "8.8.8.8",
             "opt": [],
-            "ipv4": "192.168.0.3",
+            "ipv4": "192.168.1.3",
             "mac": "b4:2e:99:2c:dd:52",
             "group": "DEFAULT",
             "domainsearch": "nsboot.local",
-            "gateway": "192.168.0.210",
+            "gateway": "192.168.1.254",
             "name": "PC003",
             "swp": 0
         },
@@ -256,8 +256,8 @@
             "domainsearch": "nsboot.local",
             "mac": "b4:2e:99:2c:dd:df",
             "opt": [],
-            "ipv4": "192.168.0.4",
-            "gateway": "192.168.0.210",
+            "ipv4": "192.168.1.4",
+            "gateway": "192.168.1.254",
             "name": "PC004",
             "tid": "4"
         },
@@ -294,11 +294,11 @@
                 }
             ],
             "opt": [],
-            "ipv4": "192.168.0.5",
+            "ipv4": "192.168.1.5",
             "mac": "b4:2e:99:2c:de:5c",
             "group": "DEFAULT",
             "domainsearch": "nsboot.local",
-            "gateway": "192.168.0.210",
+            "gateway": "192.168.1.254",
             "name": "PC005",
             "dns": "8.8.8.8"
         },
@@ -341,8 +341,8 @@
             "domainsearch": "nsboot.local",
             "mac": "b4:2e:99:9c:dc:53",
             "opt": [],
-            "ipv4": "192.168.0.6",
-            "gateway": "192.168.0.210",
+            "ipv4": "192.168.1.6",
+            "gateway": "192.168.1.254",
             "name": "PC006",
             "tid": "6"
         }
